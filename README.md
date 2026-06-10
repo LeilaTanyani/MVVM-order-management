@@ -4,9 +4,7 @@ A lightweight Android application demonstrating clean architecture principles us
 
 ---
 
-### Architecture Overview 
-
-![ViewModel Lifecycle](screenshots/MVVM-Explained.png)
+### Architecture Overview
 
 This project is built strictly around the **MVVM Architecture** to ensure separation of concerns, testability, and lifecycle awareness.
 
