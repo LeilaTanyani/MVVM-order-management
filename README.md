@@ -4,7 +4,9 @@ A lightweight Android application demonstrating clean architecture principles us
 
 ---
 
-### Architecture Overview 🛠️
+### Architecture Overview 
+
+![ViewModel Lifecycle](screenshots/MVVM-Explained.png)
 
 This project is built strictly around the **MVVM Architecture** to ensure separation of concerns, testability, and lifecycle awareness.
 
@@ -62,16 +64,16 @@ The application showcases advanced data streaming techniques, including:
 ### The ViewModel Lifecycle
 The diagram below illustrates how the ViewModel survives configuration changes, allowing the View to seamlessly reconnect and retrieve active data operations exactly where it left off.
 
-![ViewModel Lifecycle Explanation](path/to/your/MVVM-Explained.png)
+![ViewModel Lifecycle](screenshots/MVVM-Explained.png)
 
 ### App Data Architecture
 A detailed breakdown of how data flows from our background threads up to the user interface:
 
-![Order Management Architecture](path/to/your/Order-management-architecture.png)
+![Order Management](screenshots/Order-management-architecture.png)
 
 ---
 
-## Technology stack
+## Tech stack
 *   **Language:** Kotlin
 *   **Architecture:** MVVM (Model-View-ViewModel)
 *   **Multi-threading/Asynchronous Programming:** Kotlin Coroutines
