@@ -1,12 +1,12 @@
-# Order Management Application 📦
+## Order Management Application
 
 A lightweight Android application demonstrating clean architecture principles using the **MVVM (Model-View-ViewModel)** design pattern. The app displays a dynamic list of orders, handles background data generation, and showcases advanced architecture concepts.
 
 ---
 
-## Architecture Overview 🛠️
+### Architecture Overview 🛠️
 
-This project is built strictly around the **MVVM Architecture** combined with reactive UI patterns to ensure separation of concerns, testability, and lifecycle awareness.
+This project is built strictly around the **MVVM Architecture** to ensure separation of concerns, testability, and lifecycle awareness.
 
               ┌──────────────────────────────┐
               │             View             │
@@ -34,17 +34,17 @@ This project is built strictly around the **MVVM Architecture** combined with re
 
 ---
 
-## Key Features & Advantages ✨
+### Key Features & Advantages
 
 *   **Lifecycle Awareness:** By utilizing `LiveData`, the UI automatically updates to match the current data state. It eliminates common issues like memory leaks and crashes caused by stopped Activities.
 *   **Multi-View Data Sharing:** Multiple fragments can attach to a single, shared ViewModel. This acts as a centralized repository, allowing seamless data sharing across different UI components.
 *   **Asynchronous Processing:** Powered by **Kotlin Coroutines** to shift heavy data generation tasks off the main thread, keeping the UI smooth and responsive.
 *   **Thread Safety:** Utilizes `postValue()` on background threads to safely dispatch data updates back to the main thread.
-*   **Unit Test Ready:** Because the ViewModel contains no Android UI framework dependencies, it can be easily isolated for quick, reliable Unit Testing.
+*   **Unit Test-Ready:** Because the ViewModel contains no Android UI framework dependencies, it can be easily isolated for quick, reliable Unit Testing.
 
 ---
 
-## Advanced Architecture Implementation 🚀
+## Advanced Architecture Implementation 
 
 ### 1. Context and Memory Management
 To prevent severe memory leaks, the ViewModel **never references an Activity Context**. If an Activity is destroyed and recreated during a configuration change, any reference held by a long-lived ViewModel would clog the memory heap.
@@ -71,8 +71,9 @@ A detailed breakdown of how data flows from our background threads up to the use
 
 ---
 
-## Tech Stack 💻
+## Technology stack
 *   **Language:** Kotlin
 *   **Architecture:** MVVM (Model-View-ViewModel)
-*   **Asynchrony:** Kotlin Coroutines
+*   **Multi-threading/Asynchronous Programming:** Kotlin Coroutines
 *   **UI Components:** LiveData, Lifecycle-aware components
+
